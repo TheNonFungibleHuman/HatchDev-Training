@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let firstNum = parseInt(prompt("First Number"));
+      let secondNum = parseInt(prompt("Second Number"));
+      let usersChoice = prompt("Enter one of these (div, mul, add, sub, mod)");
+
+      let addition = "add";
+      let sub = "sub";
+      let multiplication = "mul";
+      let div = "div";
+      let remainder = "mod";
+
+    //   if (usersChoice === addition) alert("addition:" +(firstNum + secondNum));
+    //   if (usersChoice === sub) alert("subtraction:" -(firstNum - secondNum));
+    //   if (usersChoice === multiplication)
+    //     alert("multipllication:" * firstNum * secondNum);
+    //   if (usersChoice === div) alert("division:" / (firstNum / secondNum));
+    //   if (userChoice === remainder) alert("remainder" % (firstNum % secondNum));
+
+      switch (usersChoice) {
+        case addition:
+          alert (firstNum + secondNum);
+          break;
+        case sub:
+          alert(firstNum - secondNum);
+          break;
+
+        case multiplication:
+          alert(firstNum * secondNum);
+          break;
+
+        case div:
+          alert(firstNum / secondNum);
+          break;
+
+        case remainder:
+          alert(firstNum % secondNum);
+          break;
+        default:
+          alert("This is not a valid operation");
+      }
+    </script>
+  </body>
+</html>
